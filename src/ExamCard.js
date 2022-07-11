@@ -58,7 +58,7 @@ const ExamCard = ({ queObj, index, deleteExam, updateExamList }) => {
           </span>
           <ul className="text-black">
             <li className="text-black">{queObj.OptionOne}</li>
-            <li className="text-black" >{queObj.OptionTwo}</li>
+            <li className="text-black">{queObj.OptionTwo}</li>
             <li className="text-black">{queObj.OptionThree}</li>
             <li className="text-black">{queObj.OptionFour}</li>
           </ul>
@@ -82,12 +82,12 @@ const ExamCard = ({ queObj, index, deleteExam, updateExamList }) => {
             ></i>
           </div>
         </div>
-        {/* <ExamEdit
-        modal={modal}
-        toggle={toggle}
-        updateTask={updateTask}
-        exam={queObj}
-      /> */}
+        <ExamEdit
+          modal={modal}
+          toggle={toggle}
+          updateTask={updateTask}
+          queObj={queObj}
+        />
       </div>
     </>
   );
